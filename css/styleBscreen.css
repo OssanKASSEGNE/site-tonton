@@ -3,8 +3,222 @@
     box-sizing : border-box;
 }
 body{
+    font-family: 'Roboto', sans-serif;
+    background: #eaeef0;
+}
+.all{
+    width : 1100px;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 5px 34px -1px rgba(0,0,0,0.75);
+
+}
+/***tête****/
+#header{
+   
+   display: flex;
+   flex-direction: row;
+   height : 225px;
+  
+}
+.logo{
     
 }
-header{
-    border : 1px solid black;
+.logoimg1{
+    margin-top : 5px;
 }
+.logoimg1 img{
+    display:block;
+    
+    width : 85;
+    margin : auto;
+}
+.phrase1{
+    margin-left : 10px;
+    margin-right : 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size : 25px;
+    font-weight : 900;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color :#003449;
+}
+.phrase2{
+    text-align : center;
+    letter-spacing: 2px;
+    margin-top : 3px;
+   font-family: 'Mukta Malar', sans-serif;
+    font-size : 23px;
+    
+    color :#003449;
+}
+.container-info1{
+    flex-grow : 2;
+
+   
+}
+.container-info2{
+    display: flex;
+    flex-direction: row;
+    background :#d9f9e1;
+    height: 135px;
+    
+}
+.adress{
+ 
+   display: flex;
+   flex-direction : column;
+   justify-content: center;
+    flex-basis : 366.66px;
+  
+}
+.inside{
+    display: flex;
+    flex-direction:  row;
+    justify-content: center;
+}
+.inside img{
+    width : 38.8px;
+    height : 38.8px;
+}
+.telephone{
+   display: flex;
+   flex-direction : column;
+   justify-content: center;
+   flex-basis : 366.66px;
+}
+.adr1{
+    margin-left: 15px;
+    color: #658f8f;
+}
+.tel1{
+    font-size : 20px;
+    color: #658f8f;
+     margin-left: 15px;
+    line-height: 38.8px; /* hauteur de ligne (identique) */
+  white-space: nowrap; 
+  
+}
+/****navigateur*****/
+#nav ul{
+    display : flex;
+    flex-direction : row;
+
+    list-style: none;
+    height: 57px;
+    text-align: center;
+    background: #003449;
+    padding: 0;
+}
+#nav ul li{
+    
+   flex-grow: 1;
+ 
+  line-height: 57px; /* hauteur de ligne (identique) */
+  white-space: nowrap; 
+
+   
+}
+#nav ul a{
+    text-decoration : none;
+    color : #d9f9e1;
+}
+#nav ul a:hover{
+    
+    color : #86f1a3;
+}
+/****Fin de l'en-tête****/
+
+/**deuxième conteneur***/
+
+section.container-rdv{  
+    position : relative;
+    
+}
+.contener_slide{
+ position : relative;
+  width : 700px;
+}
+.oublier{
+    width : 320px;
+    height : 500 px;
+    background: #dcedf1;
+    position : absolute;
+    left : 10px;
+    bottom : 40px;
+    
+}
+.slid_1{
+    height: 380px;
+}
+.slid_1 img{
+   width : 700px;
+    height: 380px;
+}
+/****zone de timetable et rendez-vous***/
+
+.timetable{
+    position: absolute;
+    top : 0;
+    right : 0;
+    width : 400px;
+    height: 380px;
+    color: #658f8f;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.timetable h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Mukta Malar', sans-serif;
+    color :#003449;
+    font-size : 23px;
+    letter-spacing: 1px;
+   text-align : center;
+}
+
+.timetable table{
+    margin-left: 33px;
+    width : 320px;
+}
+td{
+    padding: 7px;
+    
+}
+
+.takerdv{
+     flex-grow: 1;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+.takerdv:hover{
+     background: #d9f9e1;
+}
+.takerdv a{
+ 
+    
+   text-decoration: none;
+   color: #658f8f;
+   font-size : 20px;
+   margin-right: 50px;
+   letter-spacing: 2px;
+ 
+}
+.takerdv img{
+  margin-left: 33px;
+} 
+
+
+/*******Vue de zone*****
+div{
+    border : 1px solid black;
+   
+}
+p{
+    border : 1px solid green;
+
+}**/

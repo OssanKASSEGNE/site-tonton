@@ -6,51 +6,106 @@
 	<meta name="author" content="NolifeRapha">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans|Roboto|Mukta+Malar" rel="stylesheet">
     <link rel="stylesheet" href="css/styleBscreen.css">
     <title>Chirurgie réfractive Dr AGOSSOU</title> 
 </head>
 <body>
-    <header>     
+<div class="all">
+    <header id="header">     
         <div class="logo">
-            <p class = "logo"> <img src="images/imglogo" alt="logo du cabinet"> </p>
+            <p class = "logoimg1"> <img src="images/imglogo" alt="logo du cabinet"> </p>
             <p class="phrase1">Chirurgie réfractive par laser</p>
             <p class="phrase2">Docteur AGOSSOU Komlan</p>
         </div>
         <div class="container-info1">
             <div class="container-info2">
                 <div class="adress">
-                    <p class = ""> <img src="images/logoadr.png" alt="adresse du cabinet"> 21 Rue de La Martinière (ZA) 72300 Sablé-sur-Sarthe </p>
+                    <div class = "inside"> <img src="images/logoadr.png" alt="adresse du cabinet"><p class="adr1"> 21 Rue de La Martinière (ZA) <br>
+                   72300 Sablé-sur-Sarthe </p></div>
                 </div>
                 <div class="telephone">
-                    <p > <img src="images/logotel.png" alt="téléphone cabinet"> 02 43 95 87 66 </p>
+                   
+                     <div class = "inside"> <img src="images/logotel.png" alt="adresse du cabinet"><p class="tel1"> 02 43 95 87 66</p></div>
                 </div>
             </div>
              <div id="nav">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Suis-je opérable?</a></li>
-                    <li><a href="#">Les traitements</a></li>
-                    <li><a href="#">Prendre rendez-vous</a></li>
+                    <li><a href="accueil.php" style="color :#86f1a3 ;">ACCUEIL</a></li>
+                    <li><a href="operable.php">SUIS-JE OP&#201RABLE?</a></li>
+                    <li><a href="#">LES TRAITEMENTS</a></li>
+                    <li><a href="#">NOUS CONTACTER</a></li>
                 </ul>
+             </div>
+             <div class="blank">
+
              </div>
         </div>
     </header>
     <section class="container-rdv">
-        <div class="presentation-img">
-            <img src="images/smile.webp" alt="image de présentation">
-           
+        <div class="contener_slideshow">
+            <div class="contener_slide">
+                
+                <div class="slid_1"><img src="images/smile"alt ="slid_1_img"></div>
+                <div class="oublier">
+                    <p> OUBLIEZ VOS LUNNETTES ET SIMPLIFIEZ VOUS LA VIE </p>
+                </div>
+            </div>
         </div>
         <div class="timetable">
-            <div class="horaire"></div>
-            <div class="takerdv"></div>
+            <div class="horaire">
+                <h2> Horaires d'ouverture </h2>
+                <table>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>8h30 - 17h30</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>8h30 - 17h30</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>8h30 - 17h30</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>8h30 - 17h30</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>8h30 - 17h30</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>Fermé</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>Fermé</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="takerdv inside">
+                  <img src="images/logordv.png" alt="Prendre un rendez-vous">  <p > <a  href="#" alt="prendre un rendez-vous">Prendre un rendez-vous</a></p>
+            </div>
         </div>
     </section>
-
+   
     <section class="description">
         <div class="chir">
+            <h3>Clinique de chirurgie réfractive</h3>
             <p>Situé au coeur de la clinique de l&rsquo;anjou, le centre de chirurgie réfractive &laquo;&nbsp;Anjou vision&nbsp;&raquo;, traite vos défauts visuels au laser. Les ophtalmologues vous accompagnent durant les étapes clés de votre opération&#8230;</p>
-
-            <p><iframe style="width: 100%;" src="https://www.youtube.com/embed/QHENzRSlWw8?rel=0" width="300" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+            <p>
+                <video width="320" height="240" controls poster="images/chir-image-video.jpg">
+                    <source src="video/traitement-des-defauts-visuels-au-laser.mp4" type="video/mp4">
+                    <source src="video/traitement-des-defauts-visuels-au-laser.avi" type="video/avi">
+                    <source src="video/traitement-des-defauts-visuels-au-laser.webm" type="video/webm">
+                    Votre navigateur ne permet pas de lire les vidéos.
+                </video>
+             
+           </p>
 
         </div>
         <div class="pourquoi">
@@ -72,7 +127,7 @@
                         <h4> Diagnostic pré opératoire </h4>
                         <p>Ces examens permettront de vérifier que vous ne présentez aucune contre indication au traitement laser.</p>
                     </div>
-                    
+
                     <div>
                         <div ><span >2</span></div>
                         <h4> Traitement </h4>
@@ -88,17 +143,64 @@
 
                 </div>
     </section>
-    <section class="foot1">
-        <div class="coord">
+    <footer id="footer">
+
+       <div class="">
+                <h3><span></span>Coordonnées LEMANS</h3> 
+                <div class="">
+                        <p>Anjou Vision<br>Centre de chirurgie réfractive</p>
+                        <p> 9, rue de l'Hirondelle<br>49044 ANGERS CEDEX 01</p>
+                </div>
         </div>
-        <div class="pourqui">
+        <div class="">
+                <h3><span></span>Coordonnées SABLE</h3> 
+                <div class="">
+                        <p>Anjou Vision<br>Centre de chirurgie réfractive</p>
+                        <p> 9, rue de l'Hirondelle<br>49044 ANGERS CEDEX 01</p>
+                </div>
         </div>
-        <div class="traitement">
+
+		<div class="">
+                <h3 ><span></span>Pour qui ?</h3> 
+                    <ul>
+                        <li><a href="/a-qui-sadressee-le-traitement/la-myopie/">La myopie</a></li>
+                        <li><a href="/a-qui-sadressee-le-traitement/lhypermetropie/">L'hypermétropie</a></li>
+                        <li><a href="/a-qui-sadressee-le-traitement/lastigmatisme/">L'astigmatisme</a></li>
+                        <li><a href="/a-qui-sadressee-le-traitement/la-presbytie">La presbytie</a></li>
+                        <li><a href="/a-qui-sadressee-le-traitement/jai-plusieurs-defauts-visuels/">J'ai plusieurs défauts visuels</a></li>
+                    </ul>
         </div>
-        <div class="takerdv2">
+
+		<div class=""> 
+                <h3 class=""><span class=""></span>Les traitements</h3> 
+                    <ul>
+                        <li><a href="/les-traitements/pkr/">PKR</a></li>
+                        <li><a href="/les-traitements/femto-lasik/">Femto-LASIK</a></li>
+                        <li><a href="/les-traitements/smile/">SMILE</a></li>
+                        <li><a href="/les-traitements/ptk/">PTK</a></li>
+                        <li><a href="/les-traitements/presbilaisk/">PRESBYLASIK</a></li>
+                    </ul>
         </div>
-    </section>
-    <footer id ="footer">
+
+       
     </footer>
+    <div class="copyright">
+                <div class="">
+                    <p>Clinique du Dr AGOSSOU © 2018 </p>
+                    <ul class="footer-liens">
+                        <li><a href="http://anjou-vision.com/">Accueil</a>/</li>
+                        
+                        <li><a href="http://anjou-vision.com/a-qui-sadressee-le-traitement">Suis-je opérable?</a>/</li>
+                        <li><a href="http://anjou-vision.com/les-traitements">Les traitements</a>/</li>
+                        <li><a href="http://anjou-vision.com/prendre-rendez-vous">Prendre rendez-vous</a>/</li>
+                      
+                       
+                    </ul>
+                </div>
+    </div>
+    </div>
+    <script>
+        
+    </script>
 </body>
 </html>
