@@ -6,8 +6,13 @@
 	<meta name="author" content="NolifeRapha">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans|Roboto|Mukta+Malar" rel="stylesheet">
-    <link rel="stylesheet" href="css/styleBscreen.css">
+    <!--classic css-->
+     <link rel="stylesheet" href="css/styleBscreen.css">
+    <!--font icons  css-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--font external css-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans|Roboto|Mukta+Malar|Playfair+Display|Roboto" rel="stylesheet">
+   
     <title>Chirurgie réfractive Dr AGOSSOU</title> 
 </head>
 <body>
@@ -43,13 +48,20 @@
         </div>
     </header>
     <section class="container-rdv">
-        <div class="contener_slideshow">
-            <div class="contener_slide">
+        <div class="mySlides-container">
+
+            <div class="mySlides fade">
                 
                 <div class="slid_1"><img src="images/smile"alt ="slid_1_img"></div>
                 <div class="oublier">
-                    <p> OUBLIEZ VOS LUNNETTES ET SIMPLIFIEZ VOUS LA VIE </p>
+                    <p> OUBLIEZ VOS LUNETTES  SIMPLIFIEZ VOUS LA VIE!</p>
                 </div>
+            </div>
+
+            <div class="dot-container">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
             </div>
         </div>
         <div class="timetable">
@@ -95,10 +107,10 @@
    
     <section class="description">
         <div class="chir">
-            <h3>Clinique de chirurgie réfractive</h3>
-            <p>Situé au coeur de la clinique de l&rsquo;anjou, le centre de chirurgie réfractive &laquo;&nbsp;Anjou vision&nbsp;&raquo;, traite vos défauts visuels au laser. Les ophtalmologues vous accompagnent durant les étapes clés de votre opération&#8230;</p>
-            <p>
-                <video width="320" height="240" controls poster="images/chir-image-video.jpg">
+            <h2>Clinique de chirurgie réfractive</h2>
+            <p class="lieu">Situés au MANS et à SABL&#201, nos cliniques de chirurgie réfractive, traitent vos défauts visuels au laser. Les ophtalmologues vous accompagnent durant les étapes clés de votre opération&#8230;</p>
+            <p class="intro-video">
+                <video  height="380" controls poster="images/chir-image-video.jpg">
                     <source src="video/traitement-des-defauts-visuels-au-laser.mp4" type="video/mp4">
                     <source src="video/traitement-des-defauts-visuels-au-laser.avi" type="video/avi">
                     <source src="video/traitement-des-defauts-visuels-au-laser.webm" type="video/webm">
@@ -109,8 +121,9 @@
 
         </div>
         <div class="pourquoi">
-                <h3>Motivation des patients</h3>
+            
                 <div>
+                    <h2>Motivations des patients </h2>
                     <p>Les motivations des patients pour la chirurgie réfractive sont diverses et correspondent à des enjeux pratiques, fonctionnels, esthétiques et financiers. L’estime de soi est également partie prenante chez certains patients, en particuliers atteints de fortes amétropies (myopie forte, etc.). Les facteurs principaux mis en avant par les patients (souvent associés) pour justifier la réalisation d’une chirurgie réfractive sont :</p>
                     <ul>
                         <li>– l’intolérance aux lentilles de contact</li>
@@ -121,47 +134,43 @@
                     </ul>
                 </div>
 
-                <div>
-                    <div>
-                        <div ><span>1</span></div>
-                        <h4> Diagnostic pré opératoire </h4>
-                        <p>Ces examens permettront de vérifier que vous ne présentez aucune contre indication au traitement laser.</p>
-                    </div>
-
-                    <div>
-                        <div ><span >2</span></div>
-                        <h4> Traitement </h4>
-                        <p>Le traitement au laser dure environt 30 minutes pour les 2 yeux.<br />
+                <div class="list-type1">
+                    <ol>
+                        <li><a href="#"> Diagnostic pré opératoire</a></li>
+                             <p>Ces examens permettront de vérifier que vous ne présentez aucune contre indication au traitement laser.</p>
+                        <li><a href="#"> Traitement </a></li>
+                            <p>Le traitement au laser dure environt 30 minutes pour les 2 yeux.<br />
                           Myopie / Hypermétropie / Astigmatisme / Presbytie</p>
-                    </div>
-
-                    <div >
-                        <div ><span >3</span></div>
-                        <h4>Visite post opératoire</h4>
-                        <p>Vous réalisez une visite post opératoire chez votre ophtalmologiste dans les jours qui suivent le traitement.</p>
-                    </div>
-
+                        <li><a href="#">Visite post opératoire</a></li>
+                             <p>Vous réalisez une visite post opératoire chez votre ophtalmologiste dans les jours qui suivent le traitement.</p>
+                    </ol>
                 </div>
+                
+
+                    
+
+                    
+           
     </section>
     <footer id="footer">
 
-       <div class="">
-                <h3><span></span>Coordonnées LEMANS</h3> 
-                <div class="">
+       <div class="ret">
+                <h3><i class="material-icons" style="font-size:36px">place </i> Coordonnées LEMANS</h3> 
+                <div class="realadr">
                         <p>Anjou Vision<br>Centre de chirurgie réfractive</p>
                         <p> 9, rue de l'Hirondelle<br>49044 ANGERS CEDEX 01</p>
                 </div>
         </div>
-        <div class="">
-                <h3><span></span>Coordonnées SABLE</h3> 
-                <div class="">
+        <div class="ret">
+                <h3><i class="material-icons" style="font-size:36px"> place </i> Coordonnées SABL&#201</h3> 
+                <div class="realadr">
                         <p>Anjou Vision<br>Centre de chirurgie réfractive</p>
-                        <p> 9, rue de l'Hirondelle<br>49044 ANGERS CEDEX 01</p>
+                        <p>21 Rue de La Martinière (ZA) <br>72300 Sablé-sur-Sarthe</p>
                 </div>
         </div>
 
-		<div class="">
-                <h3 ><span></span>Pour qui ?</h3> 
+		<div class="ret">
+                <h3 ><i class="material-icons" style="font-size:36px"> face</i> Pour qui ?</h3> 
                     <ul>
                         <li><a href="/a-qui-sadressee-le-traitement/la-myopie/">La myopie</a></li>
                         <li><a href="/a-qui-sadressee-le-traitement/lhypermetropie/">L'hypermétropie</a></li>
@@ -171,8 +180,8 @@
                     </ul>
         </div>
 
-		<div class=""> 
-                <h3 class=""><span class=""></span>Les traitements</h3> 
+		<div class="ret"> 
+                <h3 class=""><i class="material-icons" style="font-size:36px"> thumb_up</i> Les traitements</h3> 
                     <ul>
                         <li><a href="/les-traitements/pkr/">PKR</a></li>
                         <li><a href="/les-traitements/femto-lasik/">Femto-LASIK</a></li>
@@ -185,22 +194,44 @@
        
     </footer>
     <div class="copyright">
-                <div class="">
-                    <p>Clinique du Dr AGOSSOU © 2018 </p>
+                
+                    
                     <ul class="footer-liens">
-                        <li><a href="http://anjou-vision.com/">Accueil</a>/</li>
+                        <p>Clinique du Dr AGOSSOU © 2018 </p>
+                        <li><a href="http://anjou-vision.com/">Accueil</a></li>
                         
-                        <li><a href="http://anjou-vision.com/a-qui-sadressee-le-traitement">Suis-je opérable?</a>/</li>
-                        <li><a href="http://anjou-vision.com/les-traitements">Les traitements</a>/</li>
-                        <li><a href="http://anjou-vision.com/prendre-rendez-vous">Prendre rendez-vous</a>/</li>
+                        <li><a href="http://anjou-vision.com/a-qui-sadressee-le-traitement">Bilan préopératoire</a></li>
+                        <li><a href="http://anjou-vision.com/les-traitements">Les traitements</a></li>
+                        <li><a href="http://anjou-vision.com/prendre-rendez-vous">Prendre rendez-vous</a></li>
+                        <li><a href="http://anjou-vision.com/prendre-rendez-vous">Questions fréquentes</a></li>
                       
                        
                     </ul>
-                </div>
+                
     </div>
     </div>
-    <script>
+    <script >
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
         
     </script>
+    <script src="js/javascipt.js"></script>
 </body>
 </html>
