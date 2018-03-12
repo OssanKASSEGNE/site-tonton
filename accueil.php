@@ -274,7 +274,7 @@
                     
                     <ul class="footer-liens">
                         <p>Clinique du Dr AGOSSOU © 2018 </p>
-                        <li><a href="acceuil.php">Accueil</a></li>
+                        <li><a href="accueil.php">Accueil</a></li>
                         <li><a href="suisjeoperable">Suis-je opérable?</a></li>
                         <li><a href="bilanpreoperatoire.php">Bilan préopératoire</a></li>
                         <li><a href="traitement.php">Les traitements</a></li>
