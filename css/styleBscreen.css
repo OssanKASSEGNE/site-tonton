@@ -2,17 +2,31 @@
     margin : 0;
     box-sizing : border-box;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    background: #eaeef0;
+html,body { height: 100%;   }
+
+body{ /**display table génial**/
+    font-family: 'Roboto', sans-serif; 
+  /**  background: #eaeef0;*/
+  position: relative;
+  display: table;
+  width: 100%; 
+}
+
+body::after {
+  content: '';
+  display: block;
+   height:318px;
 }
 .all{
     width : 1300px;
     margin: auto;
     background: white;
-    box-shadow: 0px 5px 34px -1px rgba(0,0,0,0.75);
+    position: relative;
+    
+   /** box-shadow: 0px 5px 34px -1px rgba(0,0,0,0.75);*/
 
 }
+
 /***tête****/
 #header{
    
@@ -99,6 +113,7 @@ body{
   
 }
 /****navigateur*****/
+
 #nav ul{
     display : flex;
     flex-direction : row;
@@ -118,11 +133,12 @@ body{
 
    
 }
-#nav ul a{
+ ul a{
     text-decoration : none;
     color : #d9f9e1;
+    transition: color 1s;
 }
-#nav ul a:hover{
+ ul a:hover{
     
     color : #86f1a3;
 }
@@ -162,18 +178,18 @@ section.container-rdv{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 4s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .3} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .3} 
   to {opacity: 1}
 }
 .oublier{
@@ -203,6 +219,7 @@ section.container-rdv{
    width : 800px;
     height: 420px;
     vertical-align: middle;
+    border-radius: 4px;
 }
 /****zone de timetable et rendez-vous***/
 
@@ -240,23 +257,25 @@ td{
 .takerdv{
      flex-grow: 1;
      display: flex;
+     border-top: 1px solid #003449;
     align-items: center;
     justify-content: space-around;
- 
+    transition : color 0.7s background 0.7s;
+    color: #003449;
+}
+.takerdv a{  
+   text-decoration: none;
+   color: #003449;
+   font-size : 20px;
+   margin-right: 90px;
+   letter-spacing: 2px;
 }
 .takerdv:hover{
      background: #d9f9e1;
+     color : #01202c;
+     
 }
-.takerdv a{
- 
-    
-   text-decoration: none;
-   color: #658f8f;
-   font-size : 20px;
-   margin-right: 50px;
-   letter-spacing: 2px;
- 
-}
+
 .takerdv img{
   margin-left: 33px;
 } 
@@ -388,6 +407,13 @@ border-radius: 2em;
 color:#FFF;
 }
 /*******Footer*****/
+#fo{
+    width: 100%;
+    height: 318px;
+    position: absolute;
+    bottom:0;
+    
+}
 #footer{
     display: flex;
     justify-content: space-around;
@@ -401,7 +427,8 @@ color:#FFF;
     flex-grow: 1;
 }
 .ret h3{
-   letter-spacing: 2px;
+   letter-spacing: 1px;
+   font-size: 17px;
 }
 .realadr{
     margin-left: 40px;
@@ -442,4 +469,94 @@ color:#FFF;
 .copyright li a:hover{
     
     color : #2a11b9;
+}
+
+/***navigation bar*****/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+ right : 0px;
+  left: 0px;
+  padding-bottom : 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-bottom: 3px solid #003449;
+}
+.column{
+    margin : 2px 5px 0px 10px;
+}
+.column p{
+    line-height: 2;
+    text-align: left;
+    color: #658f8f;
+}
+.column a{
+    text-decoration: none;
+    color : #003449;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-flow : row wrap;
+  justify-content: space-around;
+  animation : animate-nav 0.6s;
+}
+.traitement1{
+    padding-bottom:50px ;
+}
+@keyframes animate-nav{
+    from{
+        top: 220px;
+       
+    }
+    to{
+        top : 192px;
+        
+    }
+}
+/*****dropdown-sticky****/
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+ right : 0px;
+  left: 0px;
+  padding-bottom : 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-bottom: 3px solid #003449;
+}
+
+
+.dropdown:hover .dropdown-content1 {
+  display: flex;
+  flex-flow : row wrap;
+  justify-content: space-around;
+  animation : animate-nv 0.6s;
+}
+
+@keyframes animate-nv{
+    from{
+        top: 85px;
+       
+    }
+    to{
+        top : 56px;
+        
+    }
+}
+/***sticky navigation bar***/
+.sticky {
+    
+  position: fixed;
+  top: 0;
+  justify-content: space-around;
+  width : 100%;
+  right: 0;
+  z-index : 3;
+}
+.sticky + .content {
+  padding-top: 60px;
 }

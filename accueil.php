@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--classic css-->
+   
      <link rel="stylesheet" href="css/styleBscreen.css">
+
     <!--font icons  css-->
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--font external css-->
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans|Roboto|Mukta+Malar|Playfair+Display|Roboto" rel="stylesheet">
    
     <title>Chirurgie réfractive Dr AGOSSOU</title> 
@@ -36,25 +39,101 @@
             </div>
              <div id="nav">
                 <ul>
-                    <li><a href="accueil.php" style="color :#86f1a3 ;">ACCUEIL</a></li>
-                    <li><a href="operable.php">SUIS-JE OP&#201RABLE?</a></li>
-                    <li><a href="#">LES TRAITEMENTS</a></li>
-                    <li><a href="#">NOUS CONTACTER</a></li>
+                     <li><a href="accueil.php" style="color :#86f1a3 ;" >ACCUEIL</a></li>
+                    <li   class="dropdown">
+                            <a href="suisjeoperable.php" >SUIS-JE OP&#201RABLE?</a>
+                                <div id ="drop1" class="dropdown-content ">
+                                   
+                                        <div class="column">
+                                         <a href="myopie.php" >LA MYOPIE</a>
+                                        <p>Elle se caractérise par <br> 
+                                           une vision nette de près <br>
+                                            mais une vision floue de loin.</p>
+                                        </div>
+
+                                        <div class="column">
+                                        <a href="hypermetro.php">L'HYPERM&#201TROPIE</a> 
+                                        <p>Elle se caractérise par <br> 
+                                           une vision nette de loin <br> mais une vision floue de près.</p>
+                                        </div>
+
+                                        <div class="column">
+                                         <a href="astigmat.php">L'ASTiGMASTISME</a>
+                                         <p>L’astigmatisme perturbe la <br> vision de près, de loin.</p>
+                                        </div>
+
+                                        <div class="column">
+                                       <a href="presbytie.php">LA PRESBYTIE</a>
+                                        <p>Elle se caractérise par <br> 
+                                           une perte de l’accommodation <br> 
+                                           entre la vision de loin et <br> la vision de près.</p>
+                                        </div>
+
+                                        <div class="column">
+                                        <a href="plusdefauts.php">J'AI PLUSIEURS D&#201FAUTS VISUELLES</a>
+                                        </div>
+                                </div>
+                    </li>
+                    <li><a href="bilanpreoperatoire.php" >BILAN PR&#201OP&#201RATOIRE</a></li>
+                    <li  class = "dropdown" >
+                        <a href="traitement.php">LES TRAITEMENTS</a>
+                             <div id ="drop2" class="dropdown-content traitement1">
+                                   
+                                        <div class="column">
+                                         <a href="ptk.php" >PTK</a>
+                                        <p>PhotoTherapeutic <br> Keractectomy</p>
+                                        </div>
+
+                                        <div class="column">
+                                        <a href="pkr.php">PKR</a> 
+                                        <p>PhotoKératectomie <br> Réfractive</p>
+                                        </div>
+
+                                        <div class="column">
+                                         <a href="femto.php">FEMTO-LASIK</a>
+                                         <p>Laser-Assisted In-Situ <br> Keratomileusis avec <br> laser femtoseconde</p>
+                                        </div>
+
+                                        <div class="column">
+                                       <a href="smile.php">SMILE</a>
+                                        <p>Small Incision <br> Lenticule Extraction</p>
+                                        </div>
+                                </div>
+                    </li>
+                    <li><a href="contact.php">NOUS CONTACTER</a></li>
                 </ul>
              </div>
              <div class="blank">
 
              </div>
         </div>
+
     </header>
-    <section class="container-rdv">
+    
+    <section class="container-rdv content">
         <div class="mySlides-container">
 
             <div class="mySlides fade">
                 
-                <div class="slid_1"><img src="images/smile"alt ="slid_1_img"></div>
+                <div class="slid_1"> <img src="images/throw2a" alt ="slid_1_img"> </div>
                 <div class="oublier">
                     <p> OUBLIEZ VOS LUNETTES  SIMPLIFIEZ VOUS LA VIE!</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                
+                <div class="slid_1"> <img src="images/smile"alt ="slid_1_img"> </div>
+                <div class="oublier">
+                    <p> IL EST TEMPS DE FAIRE VOTRE BILAN PR&#201OP&#201RATOIRE</p>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                
+                <div class="slid_1"> <img src="images/question"alt ="slid_1_img"> </div>
+                <div class="oublier">
+                    <p>DES QUESTIONS? <br> N'H&#201SITEZ PAS &#192 NOUS CONTACTER</p>
                 </div>
             </div>
 
@@ -62,6 +141,7 @@
                 <span class="dot"></span> 
                 <span class="dot"></span> 
                 <span class="dot"></span> 
+                
             </div>
         </div>
         <div class="timetable">
@@ -98,9 +178,9 @@
                     </tr>
                 </table>
             </div>
-            <hr>
+           
             <div class="takerdv inside">
-                  <img src="images/logordv.png" alt="Prendre un rendez-vous">  <p > <a  href="#" alt="prendre un rendez-vous">Prendre un rendez-vous</a></p>
+                  <img src="images/logordv.png" alt="Prendre un rendez-vous">  <p > <a  href="contact.php" alt="prendre un rendez-vous">Prendre un rendez-vous</a></p>
             </div>
         </div>
     </section>
@@ -145,93 +225,68 @@
                              <p>Vous réalisez une visite post opératoire chez votre ophtalmologiste dans les jours qui suivent le traitement.</p>
                     </ol>
                 </div>
-                
+         </section>
+   
+</div>
+    <div id="fo">
+            <footer id="footer">
 
-                    
-
-                    
-           
-    </section>
-    <footer id="footer">
-
-       <div class="ret">
-                <h3><i class="material-icons" style="font-size:36px">place </i> Coordonnées LEMANS</h3> 
-                <div class="realadr">
-                        <p>Anjou Vision<br>Centre de chirurgie réfractive</p>
-                        <p> 9, rue de l'Hirondelle<br>49044 ANGERS CEDEX 01</p>
-                </div>
-        </div>
         <div class="ret">
-                <h3><i class="material-icons" style="font-size:36px"> place </i> Coordonnées SABL&#201</h3> 
-                <div class="realadr">
-                        <p>Anjou Vision<br>Centre de chirurgie réfractive</p>
-                        <p>21 Rue de La Martinière (ZA) <br>72300 Sablé-sur-Sarthe</p>
-                </div>
-        </div>
+                    <h3><i class="material-icons" style="font-size:36px">place </i> Coordonnées LEMANS</h3> 
+                    <div class="realadr">
+                            <p>Chirurgie réfractive <br> LeMans</p>
+                            <p> 25 Avenue Louis Cordelet <br> 72000 LE MANS</p>
+                    </div>
+            </div>
+            <div class="ret">
+                    <h3><i class="material-icons" style="font-size:36px"> place </i> Coordonnées SABL&#201</h3> 
+                    <div class="realadr">
+                            <p>Chirurgie réfractive <br> Sablé-sur-Sarthe</p>
+                            <p>21 Rue de La Martinière (ZA) <br>72300 Sablé-sur-Sarthe</p>
+                    </div>
+            </div>
 
-		<div class="ret">
-                <h3 ><i class="material-icons" style="font-size:36px"> face</i> Pour qui ?</h3> 
-                    <ul>
-                        <li><a href="/a-qui-sadressee-le-traitement/la-myopie/">La myopie</a></li>
-                        <li><a href="/a-qui-sadressee-le-traitement/lhypermetropie/">L'hypermétropie</a></li>
-                        <li><a href="/a-qui-sadressee-le-traitement/lastigmatisme/">L'astigmatisme</a></li>
-                        <li><a href="/a-qui-sadressee-le-traitement/la-presbytie">La presbytie</a></li>
-                        <li><a href="/a-qui-sadressee-le-traitement/jai-plusieurs-defauts-visuels/">J'ai plusieurs défauts visuels</a></li>
-                    </ul>
-        </div>
+            <div class="ret">
+                    <h3 ><i class="material-icons" style="font-size:36px"> face</i> Pour qui ?</h3> 
+                        <ul>
+                            <li><a href="myopie.php">La myopie</a></li>
+                            <li><a href="hypermetro.php">L'hypermétropie</a></li>
+                            <li><a href="astigmat.php">L'astigmatisme</a></li>
+                            <li><a href="presbytie.php">La presbytie</a></li>
+                            <li><a href="plusdefauts.php">J'ai plusieurs défauts visuels</a></li>
+                        </ul>
+            </div>
 
-		<div class="ret"> 
-                <h3 class=""><i class="material-icons" style="font-size:36px"> thumb_up</i> Les traitements</h3> 
-                    <ul>
-                        <li><a href="/les-traitements/pkr/">PKR</a></li>
-                        <li><a href="/les-traitements/femto-lasik/">Femto-LASIK</a></li>
-                        <li><a href="/les-traitements/smile/">SMILE</a></li>
-                        <li><a href="/les-traitements/ptk/">PTK</a></li>
-                        <li><a href="/les-traitements/presbilaisk/">PRESBYLASIK</a></li>
-                    </ul>
-        </div>
+            <div class="ret"> 
+                    <h3 class=""><i class="material-icons" style="font-size:36px"> thumb_up</i> Les traitements</h3> 
+                        <ul>
+                            <li><a href="pkr.php">PKR</a></li>
+                            <li><a href="femto.php">Femto-LASIK</a></li>
+                            <li><a href="smile.php">SMILE</a></li>
+                            <li><a href="ptk.php">PTK</a></li>
+                        </ul>
+            </div>
 
-       
-    </footer>
-    <div class="copyright">
+        
+        </footer>
+        <div class="copyright">
                 
                     
                     <ul class="footer-liens">
                         <p>Clinique du Dr AGOSSOU © 2018 </p>
-                        <li><a href="http://anjou-vision.com/">Accueil</a></li>
-                        
-                        <li><a href="http://anjou-vision.com/a-qui-sadressee-le-traitement">Bilan préopératoire</a></li>
-                        <li><a href="http://anjou-vision.com/les-traitements">Les traitements</a></li>
-                        <li><a href="http://anjou-vision.com/prendre-rendez-vous">Prendre rendez-vous</a></li>
-                        <li><a href="http://anjou-vision.com/prendre-rendez-vous">Questions fréquentes</a></li>
-                      
-                       
+                        <li><a href="acceuil.php">Accueil</a></li>
+                        <li><a href="suisjeoperable">Suis-je opérable?</a></li>
+                        <li><a href="bilanpreoperatoire.php">Bilan préopératoire</a></li>
+                        <li><a href="traitement.php">Les traitements</a></li>
+                        <li><a href="contact.php">Prendre rendez-vous</a></li>
+                        <li><a href="question.php">Questions fréquentes</a></li>
+                    
+                    
                     </ul>
                 
+        </div>
     </div>
-    </div>
-    <script >
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-        
-    </script>
+    
     <script src="js/javascipt.js"></script>
 </body>
 </html>
